@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mstar928 PPTV-55T</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="bennett">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/theme/css/font-awesome.css" rel="stylesheet">
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/images/apple-touch-icon-114x114.png">
+    <link href="/" type="application/atom+xml" rel="alternate" title="bennettrong ATOM Feed" />
+  </head>
+
+  <body>
+
+    <nav class="navbar  navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+                <a class="navbar-brand" href="/index.html">bennettrong </a>
+          </div>
+          <div>
+            <ul class="nav navbar-nav">
+                <li class="divider-vertical"></li>
+                <li >
+                 <a href="/category/linux.html">
+					          <i class="icon-folder-open icon-large"></i>linux
+				          </a>
+                </li>
+                <li class="active">
+                 <a href="/category/pptv.html">
+					          <i class="icon-folder-open icon-large"></i>pptv
+				          </a>
+                </li>
+                <li >
+                 <a href="/category/python27.html">
+					          <i class="icon-folder-open icon-large"></i>python27
+				          </a>
+                </li>
+                <li >
+                 <a href="/category/study.html">
+					          <i class="icon-folder-open icon-large"></i>study
+				          </a>
+                </li>
+                <ul class="nav navbar-nav pull-right">
+                      <li><a href="/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                </ul>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9" id="content">
+<section id="content">
+    <article>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h5>
+                    <a href=""
+                        rel="bookmark"
+                        title="Permalink to Mstar928 PPTV-55T">
+                        <span style="color:#ffffff">Mstar928 PPTV-55T</span>
+                    </a>
+                </h5>
+            </div>
+            <div class="panel-body">
+                    <h3>1.repository</h3>
+<div class="highlight"><pre><span></span>git clone ssh://ppgerrit.com/55T.git
+</pre></div>
+
+
+<h3>2.目录结构</h3>
+<p>jb4.4/device/skyworth/sky928_8s85/thirdparty/pptv/<br>
+├── Android.mk<br>
+├── apk<br>
+│     ├── Android.mk<br>
+│     ├── PBoxServer.apk<br>
+│     ├── PController.apk<br>
+│     ├── PLauncher.apk<br>
+│     ├── PLog.apk<br>
+│     ├── PNoKeyboardIME.apk<br>
+│     ├── PPlayer.apk<br>
+│     ├── PSettings.apk<br>
+│     ├── PSuningEBuy.apk<br>
+│     ├── PSystemXiri.apk<br>
+│     ├── PTvMarket.apk<br>
+│     ├── PTvos.apk<br>
+│     ├── PXiri.apk<br>
+│     └── PXiriHAL.apk<br>
+├── bin<br>
+│     └── xiriservice_PPTV<br>
+├── bootanimation<br>
+│     └── video.ts<br>
+├── libs<br>
+│     ├── libAshmemWriter.so<br>
+│     ├── libbasicphrasegrm.so<br>
+│     ├── libbreakpad_util_jni.so<br>
+│     ├── libdlna.so<br>
+│     ├── libEventInjector.so<br>
+│     ├── libicocodec.so<br>
+│     ├── liblocSDK3.so<br>
+│     ├── liblsopencfg.so<br>
+│     ├── liblsopen.so<br>
+│     ├── libmaindict.so<br>
+│     ├── libmeet.so<br>
+│     ├── libmspkcfg.so<br>
+│     ├── libmspk.so<br>
+│     ├── libphonecost.so<br>
+│     ├── libplayer_neon.so<br>
+│     ├── libppairplay_jni-arm-android-r9-gcc46-mt.so<br>
+│     ├── libppbox-armandroid-r4-gcc44-mt-1.1.0.so<br>
+│     ├── libppbox-armandroid-r4.so<br>
+│     ├── libppbox_jni-armandroid-r4-gcc44-mt-1.1.0.so<br>
+│     ├── libppmediaextractor-jni.so<br>
+│     ├── libppplayer_a14.so<br>
+│     ├── libRCServerJni.so<br>
+│     ├── librsjni.so<br>
+│     ├── libRSSupport.so<br>
+│     ├── libsample.so<br>
+│     ├── libsiren7codec.so<br>
+│     ├── libsmartaiwrite-jni-v5.so<br>
+│     ├── libsubtitle-jni.so  <br>
+│     ├── libsystemcommongrm.so<br>
+│     ├── libutil.so<br>
+│     ├── libvitvbasicphrasegrm.so<br>
+│     ├── libvitvlsopencfg.so<br>
+│     ├── libvitvlsopen.so<br>
+│     ├── libvitvmaindict.so<br>
+│     ├── libvitvmsc.so<br>
+│     ├── libvitvmspkcfg.so<br>
+│     ├── libvitvmspk.so<br>
+│     ├── libvitvphonecost.so<br>
+│     ├── libvitvpinyin.so<br>
+│     ├── libvitvsystemcommongrm.so<br>
+│     ├── libvitvvad.so<br>
+│     └── libxdriver_xiri_d.so<br>
+├── preinstall.mk<br>
+├── video── content.mp4  </p>
+<p>5 directories, 61 files</p>
+<h3>3.编译</h3>
+<div class="highlight"><pre><span></span>source build/envsetup.sh
+lunch full_sky928_8s85-userdebug
+make update-api
+make
+./development/scripts/releaseimage.sh
+make otapackage
+</pre></div>
+
+
+<h3>4.打包</h3>
+<div class="highlight"><pre><span></span>cd images
+./make_usb_upgrade.sh
+</pre></div>
+            </div>
+            <div class="panel-heading">
+
+<div>
+<!-- <span class="label">Date</span> -->
+<abbr class="published pull-right" title="2017-12-28T11:04:20.160779+08:00">
+        <i class="icon-calendar"></i>四 28 十二月 2017
+</abbr>
+<span class="label">By
+<a href="/author/bennett.html"><span style="color:#ffffff"><i class="icon-user icon-middle"></i> bennett</span></a></span>
+<span class="label">Category 
+<a href="/category/pptv.html"><span style="color:#ffffff"><i class="icon-folder-open  icon-middle"></i> pptv</span></a></span>
+
+
+</div>            </div>
+        </div>
+    </article>
+</section>
+        </div>
+
+        <div class="col-md-3" id="sidebar">
+
+<!--  Social -->
+<div class="panel panel-primary">
+<div class="panel-heading"><h5><i class="icon-home icon-middle"></i> Social</h5></div>
+<img class="img-responsive" src="/images/icon.jpg">
+<ul class="list-group">
+<li class="list-group-item"><i class="icon-user"></i> bennettrong</li>
+<li class="list-group-item"><i class="icon-envelope"></i> 446525117@163.com</li>
+</ul>
+</div>
+
+
+<!--  Categories -->
+<div class="panel panel-primary">
+<div class="panel-heading"><h5><i class="icon-folder-close icon-middle"></i> Categories</h5></div>
+<ul  class="list-group">
+<li class="list-group-item">
+<a href="/category/linux.html">
+<i class="icon-folder-open icon-middle"></i>linux
+</a>
+</li>
+<li class="list-group-item">
+<a href="/category/pptv.html">
+<i class="icon-folder-open icon-middle"></i>pptv
+</a>
+</li>
+<li class="list-group-item">
+<a href="/category/python27.html">
+<i class="icon-folder-open icon-middle"></i>python27
+</a>
+</li>
+<li class="list-group-item">
+<a href="/category/study.html">
+<i class="icon-folder-open icon-middle"></i>study
+</a>
+</li>
+</ul>
+</div>
+
+<!--  Tags -->
+<div class="panel panel-primary">
+<div class="panel-heading"><h5><i class="icon-tags  icon-middle"></i> Tags</h5></div>
+<ul  class="list-group">
+</ul>
+</div>
+
+
+<!-- Related Links -->
+<div class="panel panel-primary">
+<div class="panel-heading"><h5><i class="icon-external-link"></i> Related Links</h5></div>
+<ul  class="list-group">
+    <li class="list-group-item"><a href="http://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li class="list-group-item"><a href="http://python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li class="list-group-item"><a href="http://jinja.pocoo.org/"><i class="icon-external-link"></i>Jinja2</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer style="text-align:center">
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+           and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+    </div><!--/.fluid-container-->
+
+
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>some_thing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="bennett">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/theme/css/font-awesome.css" rel="stylesheet">
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/images/apple-touch-icon-114x114.png">
+    <link href="/" type="application/atom+xml" rel="alternate" title="bennettrong ATOM Feed" />
+  </head>
+
+  <body>
+
+    <nav class="navbar  navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+                <a class="navbar-brand" href="/index.html">bennettrong </a>
+          </div>
+          <div>
+            <ul class="nav navbar-nav">
+                <li class="divider-vertical"></li>
+                <li >
+                 <a href="/category/linux.html">
+					          <i class="icon-folder-open icon-large"></i>linux
+				          </a>
+                </li>
+                <li class="active">
+                 <a href="/category/pptv.html">
+					          <i class="icon-folder-open icon-large"></i>pptv
+				          </a>
+                </li>
+                <li >
+                 <a href="/category/python27.html">
+					          <i class="icon-folder-open icon-large"></i>python27
+				          </a>
+                </li>
+                <li >
+                 <a href="/category/study.html">
+					          <i class="icon-folder-open icon-large"></i>study
+				          </a>
+                </li>
+                <ul class="nav navbar-nav pull-right">
+                      <li><a href="/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                </ul>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9" id="content">
+<section id="content">
+    <article>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h5>
+                    <a href=""
+                        rel="bookmark"
+                        title="Permalink to some_thing">
+                        <span style="color:#ffffff">some_thing</span>
+                    </a>
+                </h5>
+            </div>
+            <div class="panel-body">
+                    <hr>
+<p><strong>Account</strong>： minghuang@pptv.com<br>
+<strong>Password</strong>: PPlive@0715 ###</p>
+<div class="highlight"><pre><span></span>tar -jcf - a.chm | split -b 1400k - a.chm.tar.bz2.  
+cat a.chm.tar.bz2.a* | tar -jx
+</pre></div>
+
+
+<hr>
+<h2>638 framework-pptv</h2>
+<div class="highlight"><pre><span></span>export TARGET_HARDWARE=mstar  
+export TARGET_MANIFEST=cvte  
+export TARGET_MANIFEST_VERSION=tv3  
+export BRANCH=pptv-638-cvte
+</pre></div>
+
+
+<hr>
+<h2>828 framework-pptv ##  ----------&gt;43p</h2>
+<div class="highlight"><pre><span></span>export TARGET_HARDWARE=mstar  
+export TARGET_MANIFEST=cvte  
+export TARGET_MANIFEST_VERSION=tv2  
+export BRANCH=pptv-43p
+</pre></div>
+
+
+<hr>
+<h2>40C2 Export.java</h2>
+<div class="highlight"><pre><span></span><span class="n">package</span> <span class="n">com</span><span class="o">.</span><span class="n">pptv</span><span class="o">.</span><span class="n">framework</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">com.pptv.framework.android.kitkat.wifi.KitKatLocalWifiSetting</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">com.pptv.framework.mstar.ethernet.MstarLocalEthManager</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">com.pptv.framework.mstar.widget.ImageRenderFactory</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">com.pptv.framework.cvte.tv1.tv.TvInputManagerImpl</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">com.pptv.framework.cvte.tv1.tv.TvChannelManagerImpl</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">com.pptv.framework.cvte.tv1.tv.TvSystemImpl</span><span class="p">;</span>  
+<span class="k">class</span> <span class="nc">Export</span><span class="p">{</span>
+    <span class="n">static</span> <span class="n">void</span> <span class="n">export</span><span class="p">(</span><span class="n">PptvContext</span> <span class="n">c</span><span class="p">){</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">registerModule</span><span class="p">(</span><span class="s2">&quot;wifi&quot;</span><span class="p">,</span><span class="n">com</span><span class="o">.</span><span class="n">pptv</span><span class="o">.</span><span class="n">framework</span><span class="o">.</span><span class="n">android</span><span class="o">.</span><span class="n">kitkat</span><span class="o">.</span><span class="n">wifi</span><span class="o">.</span><span class="n">KitKatLocalWifiSetting</span><span class="o">.</span><span class="n">class</span><span class="p">);</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">registerModule</span><span class="p">(</span><span class="s2">&quot;ethernet&quot;</span><span class="p">,</span><span class="n">com</span><span class="o">.</span><span class="n">pptv</span><span class="o">.</span><span class="n">framework</span><span class="o">.</span><span class="n">mstar</span><span class="o">.</span><span class="n">ethernet</span><span class="o">.</span><span class="n">MstarLocalEthManager</span><span class="o">.</span><span class="n">class</span><span class="p">);</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">registerModule</span><span class="p">(</span><span class="s2">&quot;ImageRender&quot;</span><span class="p">,</span><span class="n">com</span><span class="o">.</span><span class="n">pptv</span><span class="o">.</span><span class="n">framework</span><span class="o">.</span><span class="n">mstar</span><span class="o">.</span><span class="n">widget</span><span class="o">.</span><span class="n">ImageRenderFactory</span><span class="o">.</span><span class="n">class</span><span class="p">);</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">registerModule</span><span class="p">(</span><span class="s2">&quot;tv_input&quot;</span><span class="p">,</span><span class="n">com</span><span class="o">.</span><span class="n">pptv</span><span class="o">.</span><span class="n">framework</span><span class="o">.</span><span class="n">cvte</span><span class="o">.</span><span class="n">tv1</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">TvInputManagerImpl</span><span class="o">.</span><span class="n">class</span><span class="p">);</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">registerModule</span><span class="p">(</span><span class="s2">&quot;tv_channel&quot;</span><span class="p">,</span><span class="n">com</span><span class="o">.</span><span class="n">pptv</span><span class="o">.</span><span class="n">framework</span><span class="o">.</span><span class="n">cvte</span><span class="o">.</span><span class="n">tv1</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">TvChannelManagerImpl</span><span class="o">.</span><span class="n">class</span><span class="p">);</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">registerModule</span><span class="p">(</span><span class="s2">&quot;tv_system&quot;</span><span class="p">,</span><span class="n">com</span><span class="o">.</span><span class="n">pptv</span><span class="o">.</span><span class="n">framework</span><span class="o">.</span><span class="n">cvte</span><span class="o">.</span><span class="n">tv1</span><span class="o">.</span><span class="n">tv</span><span class="o">.</span><span class="n">TvSystemImpl</span><span class="o">.</span><span class="n">class</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2>logs</h2>
+<p>[registerModule] name : pptv.hotkey,           class : class com.pptv.framework.hotkey.HotkeyManager
+ [registerModule] name : pptv.input,            class : class com.pptv.framework.input.InputManager
+ [registerModule] name : pptv.storage,          class : class com.pptv.framework.storage.StorageManager
+ [registerModule] name : pptv.bluetooth,        class : class com.pptv.framework.bluetooth.LocalBluetoothManager
+ [registerModule] name : pptv.remote_control,       class : class com.pptv.framework.input.RemoteControlManager
+ [registerModule] name : pptv.wifi,             class : class com.pptv.framework.android.kitkat.wifi.KitKatLocalWifiSetting
+ [registerModule] name : pptv.ethernet,         class : class com.pptv.framework.mstar.ethernet.MstarLocalEthManager
+ [registerModule] name : ImageRender,           class : class com.pptv.framework.mstar.widget.ImageRenderFactory
+ [registerModule] name : pptv.tv_input,         class : class com.pptv.framework.cvte.tv1.tv.TvInputManagerImpl
+ [registerModule] name : pptv.tv_channel,       class : class com.pptv.framework.cvte.tv1.tv.TvChannelManagerImpl
+ [registerModule] name : pptv.tv_system,        class : class com.pptv.framework.cvte.tv1.tv.TvSystemImpl
+ [registerModules] name map : {wifi=pptv.wifi, tv_system=pptv.tv_system, input=pptv.input, bluetooth=pptv.bluetooth, ethernet=pptv.ethernet,tv_channel=pptv.tv_channel, output=pptv.ouput, hotkey=pptv.hotkey, tv_input=pptv.tv_input, storage=pptv.storage}
+ [registerModules] module map : {pptv.tv_channel=[class com.pptv.framework.cvte.tv1.tv.TvChannelManagerImpl], pptv.wifi=[class com.pptv.framework.android.kitkat.wifi.KitKatLocalWifiSetting], pptv.bluetooth=[class com.pptv.framework.bluetooth.LocalBluetoothManager], pptv.hotkey=[class com.pptv.framework.hotkey.HotkeyManager], pptv.input=[class com.pptv.framework.input.InputManager], ImageRender=[class com.pptv.framework.mstar.widget.ImageRenderFactory], pptv.remote_control=[class com.pptv.framework.input.RemoteControlManager], pptv.tv_system=[class com.pptv.framework.cvte.tv1.tv.TvSystemImpl], pptv.tv_input=[class com.pptv.framework.cvte.tv1.tv.TvInputManagerImpl], pptv.ethernet=[class com.pptv.framework.mstar.ethernet.MstarLocalEthManager], pptv.storage=[class com.pptv.framework.storage.StorageManager]}</p>
+<h3>GIT CONFIG</h3>
+<div class="highlight"><pre><span></span>1./etc/gitconfig     对应--system
+2.~/.gitconfig       对应--global
+3..git/config
+git config --global user.name bennettrong   
+git config --global user.email bennettrong@pptv.com
+git config --global core.editor vim
+</pre></div>
+
+
+<h3>GIT HELP</h3>
+<div class="highlight"><pre><span></span>git help command
+git command --help
+man git-command
+</pre></div>
+
+
+<h3>GIT IGNORE</h3>
+<div class="highlight"><pre><span></span><span class="na">.gitignore</span>
+<span class="err">文件</span> <span class="na">.gitignore</span> <span class="err">的格式规范如下：</span>
+<span class="err">所有空行或者以</span> <span class="err">＃</span> <span class="err">开头的行都会被</span> <span class="nf">Git</span> <span class="err">忽略。</span>
+<span class="err">可以使用标准的</span> <span class="nf">glob</span> <span class="err">模式匹配。</span>
+<span class="err">匹配模式可以以（/）开头防止递归。</span>
+<span class="err">匹配模式可以以（/）结尾指定目录。</span>
+<span class="err">要忽略指定模式以外的文件或目录，可以在模式前加上惊叹号（!）取反。</span>
+<span class="err">所谓的</span> <span class="nf">glob</span> <span class="err">模式是指</span> <span class="no">shell</span> <span class="err">所使用的简化了的正则表达式。</span> <span class="err">星号（</span><span class="p">*</span><span class="err">）匹配零个或多个任意字符；</span><span class="p">[</span><span class="no">abc</span><span class="p">]</span> <span class="err">匹配任何一个列在方括号中的字符（这个例子要么匹配一个</span> <span class="no">a</span><span class="err">，要么匹配一个</span> <span class="no">b</span><span class="err">，要么匹配一个</span> <span class="no">c</span><span class="err">）；问号（?）只匹配一个任意字符；如果在方括号中使用短划线分隔两个字符，表示所有在这两个字符范围内的都可以匹配（比如</span> <span class="p">[</span><span class="mi">0</span><span class="p">-</span><span class="mi">9</span><span class="p">]</span> <span class="err">表示匹配所有</span> <span class="mi">0</span> <span class="err">到</span> <span class="mi">9</span> <span class="err">的数字）。</span> <span class="err">使用两个星号（</span><span class="p">*)</span> <span class="err">表示匹配任意中间目录，比如</span><span class="no">a</span><span class="err">/</span><span class="p">**</span><span class="err">/</span><span class="no">z</span> <span class="err">可以匹配</span> <span class="no">a</span><span class="err">/</span><span class="no">z</span><span class="p">,</span> <span class="no">a</span><span class="err">/</span><span class="no">b</span><span class="err">/</span><span class="no">z</span> <span class="err">或</span> <span class="no">a</span><span class="err">/</span><span class="no">b</span><span class="err">/</span><span class="no">c</span><span class="err">/</span><span class="no">z</span><span class="err">等。</span>
+<span class="err">*.[</span><span class="nf">oa</span><span class="p">]</span>
+<span class="err">*~</span>
+<span class="c"># no .a files</span>
+<span class="err">*</span><span class="na">.a</span>
+<span class="c"># but do track lib.a, even though you&#39;re ignoring .a files above</span>
+<span class="err">!</span><span class="nf">lib.a</span>
+<span class="c"># only ignore the TODO file in the current directory, not subdir/TODO</span>
+<span class="err">/</span><span class="nf">TODO</span>
+<span class="c"># ignore all files in the build/ directory</span>
+<span class="nf">build</span><span class="err">/</span>
+<span class="c"># ignore doc/notes.txt, but not doc/server/arch.txt</span>
+<span class="nf">doc</span><span class="err">/</span><span class="p">*.</span><span class="no">txt</span>
+<span class="c"># ignore all .pdf files in the doc/ directory</span>
+<span class="nf">doc</span><span class="err">/</span><span class="p">**</span><span class="err">/</span><span class="p">*.</span><span class="no">pdf</span>
+</pre></div>
+
+
+<h3>GIT LOG</h3>
+<div class="highlight"><pre><span></span>例子：
+    git log --pretty=format:&quot;%h - %an, %ar : %s&quot; --graph
+    git log --pretty=&quot;%h - %s&quot; --author=gitster --since=&quot;2008-10-01&quot; --before=&quot;2008-11-01&quot; --no-merges -- t/
+</pre></div>
+
+
+<h4>格式选项</h4>
+<div class="highlight"><pre><span></span><span class="o">%</span><span class="n">H</span> <span class="err">提交对象（</span><span class="n">commit</span><span class="err">）的完整哈希字串</span>
+<span class="nf">%h</span> <span class="err">提交对象的简短哈希字串</span>
+<span class="o">%</span><span class="n">T</span> <span class="err">树对象（</span><span class="n">tree</span><span class="err">）的完整哈希字串</span>
+<span class="nf">%t</span> <span class="err">树对象的简短哈希字串</span>
+<span class="o">%</span><span class="n">P</span> <span class="err">父对象（</span><span class="n">parent</span><span class="err">）的完整哈希字串</span>
+<span class="nf">%p</span> <span class="err">父对象的简短哈希字串</span>
+<span class="nf">%an</span> <span class="err">作者（</span><span class="n">author</span><span class="err">）的名字</span>
+<span class="nf">%ae</span> <span class="err">作者的电子邮件地址</span>
+<span class="nf">%ad</span> <span class="err">作者修订日期（可以用</span> <span class="o">--</span><span class="n">date</span><span class="o">=</span> <span class="err">选项定制格式）</span>
+<span class="nf">%ar</span> <span class="err">作者修订日期，按多久以前的方式显示</span>
+<span class="nf">%cn</span> <span class="err">提交者</span><span class="p">(</span><span class="n">committer</span><span class="p">)</span><span class="err">的名字</span>
+<span class="nf">%ce</span> <span class="err">提交者的电子邮件地址</span>
+<span class="nf">%cd</span> <span class="err">提交日期</span>
+<span class="nf">%cr</span> <span class="err">提交日期，按多久以前的方式显示</span>
+<span class="nf">%s</span> <span class="err">提交说明</span>
+</pre></div>
+
+
+<h4>常用选项</h4>
+<div class="highlight"><pre><span></span>-p 按补丁格式显示每个更新之间的差异。
+--stat 显示每次更新的文件修改统计信息。
+--shortstat 只显示 --stat 中最后的行数修改添加移除统计。
+--name-only 仅在提交信息后显示已修改的文件清单。
+--name-status 显示新增、修改、删除的文件清单。
+--abbrev-commit 仅显示 SHA-1 的前几个字符，而非所有的 40 个字符。
+--relative-date 使用较短的相对时间显示（比如，“2 weeks ago”）。
+--graph 显示 ASCII 图形表示的分支合并历史。
+--pretty 使用其他格式显示历史提交信息。可用的选项包括 oneline，short，full，fuller 和 format（后跟指定格式）。
+</pre></div>
+
+
+<h4>输出过滤选项</h4>
+<div class="highlight"><pre><span></span>-(n) 仅显示最近的 n 条提交
+--since, --after 仅显示指定时间之后的提交。
+--until, --before 仅显示指定时间之前的提交。
+--author 仅显示指定作者相关的提交。
+--committer 仅显示指定提交者相关的提交。
+--grep 仅显示含指定关键字的提交
+-S 仅显示添加或移除了某个关键字的提交
+例子：
+    git log --since=2.weeks
+    git log --grep --author --all-match
+    git log -Sboot_ad_complete
+</pre></div>
+
+
+<p>git commit --amend   最新一次提交的修补<br>
+git reset HEAD  file 撤销index 保留workspace<br>
+git checkout -- file 撤销workspace修改   </p>
+<p>格  式                                     含  义<br>
+省略号...                                  可在命令行中重复多次的参数
+在方括号[]之间；                             可选项目
+在大括号{}之间；将选项用管线(|)隔开。示例：{on|off}            用户必须从中只选择一个选项的选项集<br>
+在尖括号之间&lt;&gt;                                            必须提供一个值<br>
+未使用括号的                                              用户必须提供的信息，或者必须执行的命令  </p>
+<p>dbtable_init 1
+reset</p>
+<p>setprop persist.service.adb.enable 1
+https://dl.google.com/dl/android/aosp/hammerhead-mob30p-factory-6ceae57a.tgz</p>
+<p>TARGET_CPU_API := armeabi-v7a
+APP_ABI:=armeabi-v7a</p>
+<p>838平台相关资料已同步放到如下服务器，以方便大家阅读，请系统组的工程师务必抽些时间学习熟悉下；</p>
+<p>\10.200.10.123\Share\OTT_DEV\ppos_team\mstar文档和工具\Mst838资料</p>
+            </div>
+            <div class="panel-heading">
+
+<div>
+<!-- <span class="label">Date</span> -->
+<abbr class="published pull-right" title="2017-12-28T11:04:20.200779+08:00">
+        <i class="icon-calendar"></i>四 28 十二月 2017
+</abbr>
+<span class="label">By
+<a href="/author/bennett.html"><span style="color:#ffffff"><i class="icon-user icon-middle"></i> bennett</span></a></span>
+<span class="label">Category 
+<a href="/category/pptv.html"><span style="color:#ffffff"><i class="icon-folder-open  icon-middle"></i> pptv</span></a></span>
+
+
+</div>            </div>
+        </div>
+    </article>
+</section>
+        </div>
+
+        <div class="col-md-3" id="sidebar">
+
+<!--  Social -->
+<div class="panel panel-primary">
+<div class="panel-heading"><h5><i class="icon-home icon-middle"></i> Social</h5></div>
+<img class="img-responsive" src="/images/icon.jpg">
+<ul class="list-group">
+<li class="list-group-item"><i class="icon-user"></i> bennettrong</li>
+<li class="list-group-item"><i class="icon-envelope"></i> 446525117@163.com</li>
+</ul>
+</div>
+
+
+<!--  Categories -->
+<div class="panel panel-primary">
+<div class="panel-heading"><h5><i class="icon-folder-close icon-middle"></i> Categories</h5></div>
+<ul  class="list-group">
+<li class="list-group-item">
+<a href="/category/linux.html">
+<i class="icon-folder-open icon-middle"></i>linux
+</a>
+</li>
+<li class="list-group-item">
+<a href="/category/pptv.html">
+<i class="icon-folder-open icon-middle"></i>pptv
+</a>
+</li>
+<li class="list-group-item">
+<a href="/category/python27.html">
+<i class="icon-folder-open icon-middle"></i>python27
+</a>
+</li>
+<li class="list-group-item">
+<a href="/category/study.html">
+<i class="icon-folder-open icon-middle"></i>study
+</a>
+</li>
+</ul>
+</div>
+
+<!--  Tags -->
+<div class="panel panel-primary">
+<div class="panel-heading"><h5><i class="icon-tags  icon-middle"></i> Tags</h5></div>
+<ul  class="list-group">
+</ul>
+</div>
+
+
+<!-- Related Links -->
+<div class="panel panel-primary">
+<div class="panel-heading"><h5><i class="icon-external-link"></i> Related Links</h5></div>
+<ul  class="list-group">
+    <li class="list-group-item"><a href="http://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li class="list-group-item"><a href="http://python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li class="list-group-item"><a href="http://jinja.pocoo.org/"><i class="icon-external-link"></i>Jinja2</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer style="text-align:center">
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+           and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+    </div><!--/.fluid-container-->
+
+
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Python Standard Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="bennett">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/theme/css/font-awesome.css" rel="stylesheet">
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/images/apple-touch-icon-114x114.png">
+    <link href="/" type="application/atom+xml" rel="alternate" title="bennettrong ATOM Feed" />
+  </head>
+
+  <body>
+
+    <nav class="navbar  navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+                <a class="navbar-brand" href="/index.html">bennettrong </a>
+          </div>
+          <div>
+            <ul class="nav navbar-nav">
+                <li class="divider-vertical"></li>
+                <li >
+                 <a href="/category/linux.html">
+					          <i class="icon-folder-open icon-large"></i>linux
+				          </a>
+                </li>
+                <li >
+                 <a href="/category/pptv.html">
+					          <i class="icon-folder-open icon-large"></i>pptv
+				          </a>
+                </li>
+                <li class="active">
+                 <a href="/category/python27.html">
+					          <i class="icon-folder-open icon-large"></i>python27
+				          </a>
+                </li>
+                <li >
+                 <a href="/category/study.html">
+					          <i class="icon-folder-open icon-large"></i>study
+				          </a>
+                </li>
+                <ul class="nav navbar-nav pull-right">
+                      <li><a href="/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                </ul>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9" id="content">
+<section id="content">
+    <article>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h5>
+                    <a href=""
+                        rel="bookmark"
+                        title="Permalink to The Python Standard Library">
+                        <span style="color:#ffffff">The Python Standard Library</span>
+                    </a>
+                </h5>
+            </div>
+            <div class="panel-body">
+                    <ol>
+<li><a href="/python-introduction.html">Introduction</a> </li>
+<li><a href="/python2.7/Built-in_Functions">Built-in Functions</a></li>
+<li>Non-essential Built-in Functions</li>
+<li>Built-in Constants</li>
+<li>Constants added by the site module</li>
+<li>Built-in Types</li>
+<li>Truth Value Testing</li>
+<li>Boolean Operations — and, or, not</li>
+<li>Comparisons</li>
+<li>Numeric Types — int, float, long, complex</li>
+<li>Iterator Types</li>
+<li>Sequence Types — str, unicode, list, tuple, bytearray, buffer, xrange</li>
+<li>Set Types — set, frozenset</li>
+<li>Mapping Types — dict</li>
+<li>File Objects</li>
+<li>memoryview type</li>
+<li>Context Manager Types</li>
+<li>Other Built-in Types</li>
+<li>Special Attributes</li>
+<li>Built-in Exceptions</li>
+<li>Exception hierarchy</li>
+<li>String Services</li>
+<li>string — Common string operations</li>
+<li>re — Regular expression operations</li>
+<li>struct — Interpret strings as packed binary data</li>
+<li>difflib — Helpers for computing deltas</li>
+<li>StringIO — Read and write strings as files</li>
+<li>cStringIO — Faster version of StringIO</li>
+<li>textwrap — Text wrapping and filling</li>
+<li>codecs — Codec registry and base classes</li>
+<li>unicodedata — Unicode Database</li>
+<li>stringprep — Internet String Preparation</li>
+<li>fpformat — Floating point conversions</li>
+<li>Data Types</li>
+<li>datetime — Basic date and time types</li>
+<li>calendar — General calendar-related functions</li>
+<li>collections — High-performance container datatypes</li>
+<li>heapq — Heap queue algorithm</li>
+<li>bisect — Array bisection algorithm</li>
+<li>array — Efficient arrays of numeric values</li>
+<li>sets — Unordered collections of unique elements</li>
+<li>sched — Event scheduler</li>
+<li>mutex — Mutual exclusion support</li>
+<li>Queue — A synchronized queue class</li>
+<li>weakref — Weak references</li>
+<li>UserDict — Class wrapper for dictionary objects</li>
+<li>UserList — Class wrapper for list objects</li>
+<li>UserString — Class wrapper for string objects</li>
+<li>types — Names for built-in types</li>
+<li>new — Creation of runtime internal objects</li>
+<li>copy — Shallow and deep copy operations</li>
+<li>pprint — Data pretty printer</li>
+<li>repr — Alternate repr() implementation</li>
+<li>Numeric and Mathematical Modules</li>
+<li>numbers — Numeric abstract base classes</li>
+<li>math — Mathematical functions</li>
+<li>cmath — Mathematical functions for complex numbers</li>
+<li>decimal — Decimal fixed point and floating point arithmetic</li>
+<li>fractions — Rational numbers</li>
+<li>random — Generate pseudo-random numbers</li>
+<li>itertools — Functions creating iterators for efficient looping</li>
+<li>functools — Higher-order functions and operations on callable objects</li>
+<li>operator — Standard operators as functions</li>
+<li>File and Directory Access</li>
+<li>os.path — Common pathname manipulations</li>
+<li>fileinput — Iterate over lines from multiple input streams</li>
+<li>stat — Interpreting stat() results</li>
+<li>statvfs — Constants used with os.statvfs()</li>
+<li>filecmp — File and Directory Comparisons</li>
+<li>tempfile — Generate temporary files and directories</li>
+<li>glob — Unix style pathname pattern expansion</li>
+<li>fnmatch — Unix filename pattern matching</li>
+<li>linecache — Random access to text lines</li>
+<li>shutil — High-level file operations</li>
+<li>dircache — Cached directory listings</li>
+<li>macpath — Mac OS 9 path manipulation functions</li>
+<li>Data Persistence</li>
+<li>pickle — Python object serialization</li>
+<li>cPickle — A faster pickle</li>
+<li>copy_reg — Register pickle support functions</li>
+<li>shelve — Python object persistence</li>
+<li>marshal — Internal Python object serialization</li>
+<li>anydbm — Generic access to DBM-style databases</li>
+<li>whichdb — Guess which DBM module created a database</li>
+<li>dbm — Simple “database” interface</li>
+<li>gdbm — GNU’s reinterpretation of dbm</li>
+<li>dbhash — DBM-style interface to the BSD database library</li>
+<li>bsddb — Interface to Berkeley DB library</li>
+<li>dumbdbm — Portable DBM implementation</li>
+<li>sqlite3 — DB-API 2.0 interface for SQLite databases</li>
+<li>Data Compression and Archiving</li>
+<li>zlib — Compression compatible with gzip</li>
+<li>gzip — Support for gzip files</li>
+<li>bz2 — Compression compatible with bzip2</li>
+<li>zipfile — Work with ZIP archives</li>
+<li>tarfile — Read and write tar archive files</li>
+<li>File Formats</li>
+<li>csv — CSV File Reading and Writing</li>
+<li>ConfigParser — Configuration file parser</li>
+<li>robotparser — Parser for robots.txt</li>
+<li>netrc — netrc file processing</li>
+<li>xdrlib — Encode and decode XDR data</li>
+<li>plistlib — Generate and parse Mac OS X .plist files</li>
+<li>Cryptographic Services</li>
+<li>hashlib — Secure hashes and message digests</li>
+<li>hmac — Keyed-Hashing for Message Authentication</li>
+<li>md5 — MD5 message digest algorithm</li>
+<li>sha — SHA-1 message digest algorithm</li>
+<li>Generic Operating System Services</li>
+<li>os — Miscellaneous operating system interfaces</li>
+<li>io — Core tools for working with streams</li>
+<li>time — Time access and conversions</li>
+<li>argparse — Parser for command-line options, arguments and sub-commands</li>
+<li>optparse — Parser for command line options</li>
+<li>getopt — C-style parser for command line options</li>
+<li>logging — Logging facility for Python</li>
+<li>logging.config — Logging configuration</li>
+<li>logging.handlers — Logging handlers</li>
+<li>getpass — Portable password input</li>
+<li>curses — Terminal handling for character-cell displays</li>
+<li>curses.textpad — Text input widget for curses programs</li>
+<li>curses.ascii — Utilities for ASCII characters</li>
+<li>curses.panel — A panel stack extension for curses</li>
+<li>platform — Access to underlying platform’s identifying data</li>
+<li>errno — Standard errno system symbols</li>
+<li>ctypes — A foreign function library for Python</li>
+<li>Optional Operating System Services</li>
+<li>select — Waiting for I/O completion</li>
+<li>threading — Higher-level threading interface</li>
+<li>thread — Multiple threads of control</li>
+<li>dummy_threading — Drop-in replacement for the threading module</li>
+<li>dummy_thread — Drop-in replacement for the thread module</li>
+<li>multiprocessing — Process-based “threading” interface</li>
+<li>mmap — Memory-mapped file support</li>
+<li>readline — GNU readline interface</li>
+<li>rlcompleter — Completion function for GNU readline</li>
+<li>Interprocess Communication and Networking</li>
+<li><a href="/python/subprocess">subprocess</a> — Subprocess management</li>
+<li>socket — Low-level networking interface</li>
+<li>ssl — TLS/SSL wrapper for socket objects</li>
+<li>signal — Set handlers for asynchronous events</li>
+<li>popen2 — Subprocesses with accessible I/O streams</li>
+<li>asyncore — Asynchronous socket handler</li>
+<li>asynchat — Asynchronous socket command/response handler</li>
+<li>Internet Data Handling</li>
+<li>email — An email and MIME handling package</li>
+<li>json — JSON encoder and decoder</li>
+<li>mailcap — Mailcap file handling</li>
+<li>mailbox — Manipulate mailboxes in various formats</li>
+<li>mhlib — Access to MH mailboxes</li>
+<li>mimetools — Tools for parsing MIME messages</li>
+<li>mimetypes — Map filenames to MIME types</li>
+<li>MimeWriter — Generic MIME file writer</li>
+<li>mimify — MIME processing of mail messages</li>
+<li>multifile — Support for files containing distinct parts</li>
+<li>rfc822 — Parse RFC 2822 mail headers</li>
+<li>base64 — RFC 3548: Base16, Base32, Base64 Data Encodings</li>
+<li>binhex — Encode and decode binhex4 files</li>
+<li>binascii — Convert between binary and ASCII</li>
+<li>quopri — Encode and decode MIME quoted-printable data</li>
+<li>uu — Encode and decode uuencode files</li>
+<li>Structured Markup Processing Tools</li>
+<li>HTMLParser — Simple HTML and XHTML parser</li>
+<li>sgmllib — Simple SGML parser</li>
+<li>htmllib — A parser for HTML documents</li>
+<li>htmlentitydefs — Definitions of HTML general entities</li>
+<li>XML Processing Modules</li>
+<li>XML vulnerabilities</li>
+<li>xml.etree.ElementTree — The ElementTree XML API</li>
+<li>xml.dom — The Document Object Model API</li>
+<li>xml.dom.minidom — Minimal DOM implementation</li>
+<li>xml.dom.pulldom — Support for building partial DOM trees</li>
+<li>xml.sax — Support for SAX2 parsers</li>
+<li>xml.sax.handler — Base classes for SAX handlers</li>
+<li>xml.sax.saxutils — SAX Utilities</li>
+<li>xml.sax.xmlreader — Interface for XML parsers</li>
+<li>xml.parsers.expat — Fast XML parsing using Expat</li>
+<li>Internet Protocols and Support</li>
+<li>webbrowser — Convenient Web-browser controller</li>
+<li>cgi — Common Gateway Interface support</li>
+<li>cgitb — Traceback manager for CGI scripts</li>
+<li>wsgiref — WSGI Utilities and Reference Implementation</li>
+<li>urllib — Open arbitrary resources by URL</li>
+<li>urllib2 — extensible library for opening URLs</li>
+<li>httplib — HTTP protocol client</li>
+<li>ftplib — FTP protocol client</li>
+<li>poplib — POP3 protocol client</li>
+<li>imaplib — IMAP4 protocol client</li>
+<li>nntplib — NNTP protocol client</li>
+<li>smtplib — SMTP protocol client</li>
+<li>smtpd — SMTP Server</li>
+<li>telnetlib — Telnet client</li>
+<li>uuid — UUID objects according to RFC 4122</li>
+<li>urlparse — Parse URLs into components</li>
+<li>SocketServer — A framework for network servers</li>
+<li>BaseHTTPServer — Basic HTTP server</li>
+<li>SimpleHTTPServer — Simple HTTP request handler</li>
+<li>CGIHTTPServer — CGI-capable HTTP request handler</li>
+<li>cookielib — Cookie handling for HTTP clients</li>
+<li>Cookie — HTTP state management</li>
+<li>xmlrpclib — XML-RPC client access</li>
+<li>SimpleXMLRPCServer — Basic XML-RPC server</li>
+<li>DocXMLRPCServer — Self-documenting XML-RPC server</li>
+<li>Multimedia Services</li>
+<li>audioop — Manipulate raw audio data</li>
+<li>imageop — Manipulate raw image data</li>
+<li>aifc — Read and write AIFF and AIFC files</li>
+<li>sunau — Read and write Sun AU files</li>
+<li>wave — Read and write WAV files</li>
+<li>chunk — Read IFF chunked data</li>
+<li>colorsys — Conversions between color systems</li>
+<li>imghdr — Determine the type of an image</li>
+<li>sndhdr — Determine type of sound file</li>
+<li>ossaudiodev — Access to OSS-compatible audio devices</li>
+<li>Internationalization</li>
+<li>gettext — Multilingual internationalization services</li>
+<li>locale — Internationalization services</li>
+<li>Program Frameworks</li>
+<li>cmd — Support for line-oriented command interpreters</li>
+<li>shlex — Simple lexical analysis</li>
+<li>Graphical User Interfaces with Tk</li>
+<li>Tkinter — Python interface to Tcl/Tk</li>
+<li>ttk — Tk themed widgets</li>
+<li>Tix — Extension widgets for Tk</li>
+<li>ScrolledText — Scrolled Text Widget</li>
+<li>turtle — Turtle graphics for Tk</li>
+<li>IDLE</li>
+<li>Other Graphical User Interface Packages</li>
+<li>Development Tools</li>
+<li>pydoc — Documentation generator and online help system</li>
+<li>doctest — Test interactive Python examples</li>
+<li>unittest — Unit testing framework</li>
+<li>2to3 - Automated Python 2 to 3 code translation</li>
+<li>test — Regression tests package for Python</li>
+<li>test.support — Utility functions for tests</li>
+<li>Debugging and Profiling</li>
+<li>bdb — Debugger framework</li>
+<li>pdb — The Python Debugger</li>
+<li>Debugger Commands</li>
+<li>The Python Profilers</li>
+<li>hotshot — High performance logging profiler</li>
+<li>timeit — Measure execution time of small code snippets</li>
+<li>trace — Trace or track Python statement execution</li>
+<li>Software Packaging and Distribution</li>
+<li>distutils — Building and installing Python modules</li>
+<li>ensurepip — Bootstrapping the pip installer</li>
+<li>Python Runtime Services</li>
+<li>sys — System-specific parameters and functions</li>
+<li>sysconfig — Provide access to Python’s configuration information</li>
+<li><strong>builtin</strong> — Built-in objects</li>
+<li>future_builtins — Python 3 builtins</li>
+<li><strong>main</strong> — Top-level script environment</li>
+<li>warnings — Warning control</li>
+<li>contextlib — Utilities for with-statement contexts</li>
+<li>abc — Abstract Base Classes</li>
+<li>atexit — Exit handlers</li>
+<li>traceback — Print or retrieve a stack traceback</li>
+<li><strong>future</strong> — Future statement definitions</li>
+<li>gc — Garbage Collector interface</li>
+<li>inspect — Inspect live objects</li>
+<li>site — Site-specific configuration hook</li>
+<li>user — User-specific configuration hook</li>
+<li>fpectl — Floating point exception control</li>
+<li>Custom Python Interpreters</li>
+<li>code — Interpreter base classes</li>
+<li>codeop — Compile Python code</li>
+<li>Restricted Execution</li>
+<li>rexec — Restricted execution framework</li>
+<li>Bastion — Restricting access to objects</li>
+<li>Importing Modules</li>
+<li>imp — Access the import internals</li>
+<li>importlib — Convenience wrappers for <strong>import</strong>()</li>
+<li>imputil — Import utilities</li>
+<li>zipimport — Import modules from Zip archives</li>
+<li>pkgutil — Package extension utility</li>
+<li>modulefinder — Find modules used by a script</li>
+<li>runpy — Locating and executing Python modules</li>
+<li>Python Language Services</li>
+<li>parser — Access Python parse trees</li>
+<li>ast — Abstract Syntax Trees</li>
+<li>symtable — Access to the compiler’s symbol tables</li>
+<li>symbol — Constants used with Python parse trees</li>
+<li>token — Constants used with Python parse trees</li>
+<li>keyword — Testing for Python keywords</li>
+<li>tokenize — Tokenizer for Python source</li>
+<li>tabnanny — Detection of ambiguous indentation</li>
+<li>pyclbr — Python class browser support</li>
+<li>py_compile — Compile Python source files</li>
+<li>compileall — Byte-compile Python libraries</li>
+<li>dis — Disassembler for Python bytecode</li>
+<li>pickletools — Tools for pickle developers</li>
+<li>Python compiler package</li>
+<li>The basic interface</li>
+<li>Limitations</li>
+<li>Python Abstract Syntax</li>
+<li>Using Visitors to Walk ASTs</li>
+<li>Bytecode Generation</li>
+<li>Miscellaneous Services</li>
+<li>formatter — Generic output formatting</li>
+<li>MS Windows Specific Services</li>
+<li>msilib — Read and write Microsoft Installer files</li>
+<li>msvcrt — Useful routines from the MS VC++ runtime</li>
+<li>_winreg — Windows registry access</li>
+<li>winsound — Sound-playing interface for Windows</li>
+<li>Unix Specific Services</li>
+<li>posix — The most common POSIX system calls</li>
+<li>pwd — The password database</li>
+<li>spwd — The shadow password database</li>
+<li>grp — The group database</li>
+<li>crypt — Function to check Unix passwords</li>
+<li>dl — Call C functions in shared objects</li>
+<li>termios — POSIX style tty control</li>
+<li>tty — Terminal control functions</li>
+<li>pty — Pseudo-terminal utilities</li>
+<li>fcntl — The fcntl and ioctl system calls</li>
+<li>pipes — Interface to shell pipelines</li>
+<li>posixfile — File-like objects with locking support</li>
+<li>resource — Resource usage information</li>
+<li>nis — Interface to Sun’s NIS (Yellow Pages)</li>
+<li>syslog — Unix syslog library routines</li>
+<li>commands — Utilities for running commands</li>
+<li>Mac OS X specific services</li>
+<li>ic — Access to the Mac OS X Internet Config</li>
+<li>MacOS — Access to Mac OS interpreter features</li>
+<li>macostools — Convenience routines for file manipulation</li>
+<li>findertools — The finder‘s Apple Events interface</li>
+<li>EasyDialogs — Basic Macintosh dialogs</li>
+<li>FrameWork — Interactive application framework</li>
+<li>autoGIL — Global Interpreter Lock handling in event loops</li>
+<li>Mac OS Toolbox Modules</li>
+<li>ColorPicker — Color selection dialog</li>
+<li>MacPython OSA Modules</li>
+<li>gensuitemodule — Generate OSA stub packages</li>
+<li>aetools — OSA client support</li>
+<li>aepack — Conversion between Python variables and AppleEvent data containers</li>
+<li>aetypes — AppleEvent objects</li>
+<li>MiniAEFrame — Open Scripting Architecture server support</li>
+<li>SGI IRIX Specific Services</li>
+<li>al — Audio functions on the SGI</li>
+<li>AL — Constants used with the al module</li>
+<li>cd — CD-ROM access on SGI systems</li>
+<li>fl — FORMS library for graphical user interfaces</li>
+<li>FL — Constants used with the fl module</li>
+<li>flp — Functions for loading stored FORMS designs</li>
+<li>fm — Font Manager interface</li>
+<li>gl — Graphics Library interface</li>
+<li>DEVICE — Constants used with the gl module</li>
+<li>GL — Constants used with the gl module</li>
+<li>imgfile — Support for SGI imglib files</li>
+<li>jpeg — Read and write JPEG files</li>
+<li>SunOS Specific Services</li>
+<li>sunaudiodev — Access to Sun audio hardware</li>
+<li>SUNAUDIODEV — Constants used with sunaudiodev</li>
+<li>Undocumented Modules</li>
+<li>Miscellaneous useful utilities</li>
+<li>Platform specific modules</li>
+<li>Multimedia</li>
+<li>Undocumented Mac OS modules</li>
+<li>Obsolete</li>
+<li>SGI-specific Extension modules</li>
+</ol>
+            </div>
+            <div class="panel-heading">
+
+<div>
+<!-- <span class="label">Date</span> -->
+<abbr class="published pull-right" title="2017-12-28T11:04:20.172779+08:00">
+        <i class="icon-calendar"></i>四 28 十二月 2017
+</abbr>
+<span class="label">By
+<a href="/author/bennett.html"><span style="color:#ffffff"><i class="icon-user icon-middle"></i> bennett</span></a></span>
+<span class="label">Category 
+<a href="/category/python27.html"><span style="color:#ffffff"><i class="icon-folder-open  icon-middle"></i> python27</span></a></span>
+
+
+</div>            </div>
+        </div>
+    </article>
+</section>
+        </div>
+
+        <div class="col-md-3" id="sidebar">
+
+<!--  Social -->
+<div class="panel panel-primary">
+<div class="panel-heading"><h5><i class="icon-home icon-middle"></i> Social</h5></div>
+<img class="img-responsive" src="/images/icon.jpg">
+<ul class="list-group">
+<li class="list-group-item"><i class="icon-user"></i> bennettrong</li>
+<li class="list-group-item"><i class="icon-envelope"></i> 446525117@163.com</li>
+</ul>
+</div>
+
+
+<!--  Categories -->
+<div class="panel panel-primary">
+<div class="panel-heading"><h5><i class="icon-folder-close icon-middle"></i> Categories</h5></div>
+<ul  class="list-group">
+<li class="list-group-item">
+<a href="/category/linux.html">
+<i class="icon-folder-open icon-middle"></i>linux
+</a>
+</li>
+<li class="list-group-item">
+<a href="/category/pptv.html">
+<i class="icon-folder-open icon-middle"></i>pptv
+</a>
+</li>
+<li class="list-group-item">
+<a href="/category/python27.html">
+<i class="icon-folder-open icon-middle"></i>python27
+</a>
+</li>
+<li class="list-group-item">
+<a href="/category/study.html">
+<i class="icon-folder-open icon-middle"></i>study
+</a>
+</li>
+</ul>
+</div>
+
+<!--  Tags -->
+<div class="panel panel-primary">
+<div class="panel-heading"><h5><i class="icon-tags  icon-middle"></i> Tags</h5></div>
+<ul  class="list-group">
+</ul>
+</div>
+
+
+<!-- Related Links -->
+<div class="panel panel-primary">
+<div class="panel-heading"><h5><i class="icon-external-link"></i> Related Links</h5></div>
+<ul  class="list-group">
+    <li class="list-group-item"><a href="http://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li class="list-group-item"><a href="http://python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li class="list-group-item"><a href="http://jinja.pocoo.org/"><i class="icon-external-link"></i>Jinja2</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer style="text-align:center">
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+           and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+    </div><!--/.fluid-container-->
+
+
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

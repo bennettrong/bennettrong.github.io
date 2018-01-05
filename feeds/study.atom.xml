@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>bennettrong - study</title><link href="/" rel="alternate"></link><link href="/feeds/study.atom.xml" rel="self"></link><id>/</id><updated>2017-12-28T11:04:20+08:00</updated><entry><title>Markdown 备忘</title><link href="/markdown-bei-wang.html" rel="alternate"></link><published>2017-12-28T11:04:20+08:00</published><updated>2017-12-28T11:04:20+08:00</updated><author><name>bennett</name></author><id>tag:None,2017-12-28:/markdown-bei-wang.html</id><summary type="html">&lt;h3&gt;1.markdown目标&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;易读易写
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;2.markdown换行&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;双空格+回车
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;3.markdown段落&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;段落前后空行，段落中换行使用“双空格+回车”
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;4.makrdown标题&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;This is an H1  
+=============  
+This is an H2  
+-------------  
+或者  
+# 这是 H1  
+## 这是 H2  
+###### 这是 H6
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;5.区块引用:&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;6.区块引用嵌套&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;7.markdown列表&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;* Red
+* Green
+* Blue
+
++ Red
++ Green
++ Blue
+
+- Red
+- Green
+- Blue
+
+1. Bird
+2. McHale
+3 …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h3&gt;1.markdown目标&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;易读易写
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;2.markdown换行&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;双空格+回车
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;3.markdown段落&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;段落前后空行，段落中换行使用“双空格+回车”
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;4.makrdown标题&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;This is an H1  
+=============  
+This is an H2  
+-------------  
+或者  
+# 这是 H1  
+## 这是 H2  
+###### 这是 H6
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;5.区块引用:&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;6.区块引用嵌套&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;7.markdown列表&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;* Red
+* Green
+* Blue
+
++ Red
++ Green
++ Blue
+
+- Red
+- Green
+- Blue
+
+1. Bird
+2. McHale
+3. Parish
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;8.markdown 斜体&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;*rong*
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;9.markdown strong&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;** rongqingyu test **
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;10.markdown 链接&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;This&lt;/span&gt; &lt;span class="n"&gt;is&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;an&lt;/span&gt; &lt;span class="n"&gt;example&lt;/span&gt;&lt;span class="p"&gt;](&lt;/span&gt;&lt;span class="nl"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//example.com/ &amp;quot;Title&amp;quot;) inline link.&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;This&lt;/span&gt; &lt;span class="n"&gt;link&lt;/span&gt;&lt;span class="p"&gt;](&lt;/span&gt;&lt;span class="nl"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//example.net/) has no title attribute.&lt;/span&gt;
+
+&lt;span class="n"&gt;This&lt;/span&gt; &lt;span class="n"&gt;is&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;an&lt;/span&gt; &lt;span class="n"&gt;example&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="kt"&gt;id&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="n"&gt;reference&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;style&lt;/span&gt; &lt;span class="n"&gt;link&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="kt"&gt;id&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nl"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//example.com/  &amp;quot;Optional Title Here&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;div&amp;gt;、&amp;lt;table&amp;gt;、&amp;lt;pre&amp;gt;、&amp;lt;p&amp;gt; 前后加上空行&lt;/li&gt;
+&lt;li&gt;在 HTML 区块标签间的 Markdown 格式语法将不会被处理 &lt;/li&gt;
+&lt;/ul&gt;</content></entry></feed>
